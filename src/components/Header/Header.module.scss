@@ -1,0 +1,78 @@
+@import "../../sass/variables";
+
+.Header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 20px;
+  background-color: white;
+  z-index: $header-index;
+
+  ul li {
+    list-style: none;
+
+    a {
+      // color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.desktopNavbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  transform: translate(200%, 0%);
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.hamMenu {
+  font-size: 24px;
+  color: $gray;
+}
+
+.mobileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+//   gap: 30px;
+  text-align: center;
+  background-color: $dark-violet;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // gap: 30px;
+    li {
+      padding: 20px 0;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.navLinks {
+  border-bottom: 1px solid $gray;
+}
+
+.active {
+  transform: translate(50%, 0%);
+
+}
