@@ -6,9 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 20px;
+  padding: 40px 20px 20px;
   background-color: white;
   z-index: $header-index;
+  // overflow-x: hidden;
+
 
   ul li {
     list-style: none;
@@ -25,14 +27,16 @@
 }
 
 .navbar {
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 100px;
   right: 50%;
-  transform: translate(200%, 0%);
+  transform: translate(50%, 0%);
   width: 100%;
+  padding: $m-padd;
   transition: 0.5s ease-in-out;
 }
 
@@ -73,6 +77,8 @@
 }
 
 .active {
-  transform: translate(50%, 0%);
+  display: flex;
+  // transform: translate(50%, 0%);
+  // right: 50%;
 
 }

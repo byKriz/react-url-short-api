@@ -1,33 +1,39 @@
 @import "../../sass/variables";
 
 .Hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+
 }
 
 .imgContainer {
-    width: 100%;
-    margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  left: 20px;
 
-    img {
-        width: 133vw;
-    }
+  img {
+    width: 133vw;
+    // object-fit: contain;
+  }
 }
 
 .textContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: $m-padd;
 
-    h1 {
-        font-size: 30px;
-        font-weight: 700;
-        color: $very-dark-blue;
-    }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $very-dark-blue;
+  }
 }
