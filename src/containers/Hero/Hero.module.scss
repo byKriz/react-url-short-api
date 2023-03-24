@@ -1,0 +1,33 @@
+@import "../../sass/variables";
+
+.Hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContainer {
+    width: 100%;
+    margin-bottom: 40px;
+
+    img {
+        width: 133vw;
+    }
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: $very-dark-blue;
+    }
+}
