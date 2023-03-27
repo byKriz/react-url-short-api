@@ -40,14 +40,20 @@ export const LinkShorter = () => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Shorter Link Here"
+            placeholder="Shorter Link Here..."
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+            className={emptyInput ? `${styles.error}` : ''}
           />
+          {emptyInput === true && (
+            <p>
+              <i>Please add link</i>
+            </p>
+          )}
           <button type="submit">Shorten It!</button>
         </form>
-        {emptyInput === true && <p>Please add link</p>}
       </div>
+
       <div className={styles.linksContainer}>
         <ul>
           {urls.map((url, i) => (
