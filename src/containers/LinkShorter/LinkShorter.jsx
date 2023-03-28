@@ -34,6 +34,10 @@ export const LinkShorter = () => {
     }
   };
 
+  const copyLink = (link) => {
+    navigator.clipboard.writeText(link)
+  }
+
   return (
     <section className={styles.LinkShorter}>
       <div className={styles.shorterContainer}>
@@ -43,7 +47,7 @@ export const LinkShorter = () => {
             placeholder="Shorter Link Here..."
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            className={emptyInput ? `${styles.error}` : ''}
+            className={emptyInput ? `${styles.error}` : ""}
           />
           {emptyInput === true && (
             <p>
@@ -57,11 +61,24 @@ export const LinkShorter = () => {
       <div className={styles.linksContainer}>
         <ul>
           {urls.map((url, i) => (
-            <li key={i}>
+            <li key={i} className={styles.linkItem}>
+              <a
+                href={`https://${url.original}`}
+                target="_blank"
+                className={styles.originalLink}
+              >
+                {url.original}
+              </a>
+              <div className={styles.bar}></div>
               <a href={url.full_short} target="_blank">
                 {url.short}
-              </a>{" "}
-              - {url.original}
+              </a>
+              <button
+              className={styles.copyBtn}
+                onClick={() => copyLink(url.full_short)}
+              >
+                Copy
+              </button>
             </li>
           ))}
         </ul>
