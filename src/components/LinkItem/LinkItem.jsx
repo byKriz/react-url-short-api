@@ -24,7 +24,7 @@ export const LinkItem = ({ full_short, short, original }) => {
       <a href={full_short} target="_blank">
         {short}
       </a>
-      <button className={styles.copyBtn} onClick={() => copyLink(full_short)}>
+      <button className={btnText === 'Copy' ? styles.copyBtn : `${styles.copyBtn} ${styles.copied}`} onClick={() => copyLink(full_short)}>
         {btnText}
       </button>
     </li>

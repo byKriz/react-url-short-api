@@ -14,7 +14,7 @@
   a {
     text-decoration: none;
     color: black;
-    padding: 10px 0 10px 10%;
+    padding: 10px 10% 10px 10%;
     font-size: 18px;
   }
 }
@@ -30,7 +30,18 @@
 }
 
 .copyBtn {
-  margin: auto;
   font-size: 16px;
   font-weight: 700;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $cyan;
+  padding: 10px 0;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.copied {
+    background-color: $dark-violet;
 }
