@@ -65,7 +65,6 @@ export const LinkShorter = () => {
               full_short={url.full_short}
               short={url.short}
               original={url.original}
-              index={i}
             />
           ))}
         </ul>
