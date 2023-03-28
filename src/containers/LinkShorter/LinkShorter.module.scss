@@ -63,4 +63,14 @@
   color: $red;
 }
 
+.linksContainer {
+  margin-top: -36px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 
