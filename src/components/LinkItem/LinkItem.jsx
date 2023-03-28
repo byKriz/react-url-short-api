@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./LinkItem.module.scss";
 
-export const LinkItem = ({ full_short, short, original, index }) => {
+export const LinkItem = ({ full_short, short, original }) => {
+  const [btnText, setBtnText] = useState("Copy");
 
   const copyLink = (link) => {
     navigator.clipboard.writeText(link);
+    setBtnText('Copied!')
+    setTimeout(() => setBtnText('Copy'), 2000);
   };
 
 
   return (
-    <li key={index} className={styles.linkItem}>
+    <li className={styles.linkItem}>
       <a
         href={`https://${original}`}
         target="_blank"
@@ -21,11 +24,8 @@ export const LinkItem = ({ full_short, short, original, index }) => {
       <a href={full_short} target="_blank">
         {short}
       </a>
-      <button
-        className={styles.copyBtn}
-        onClick={() => copyLink(full_short)}
-      >
-        Copy
+      <button className={styles.copyBtn} onClick={() => copyLink(full_short)}>
+        {btnText}
       </button>
     </li>
   );
