@@ -13,15 +13,13 @@ export const LinkItem = ({ full_short, short, original }) => {
 
   return (
     <li className={styles.linkItem}>
-      <a
-        href={`https://${original}`}
-        target="_blank"
+      <p
         className={styles.originalLink}
       >
         {original}
-      </a>
+      </p>
       <div className={styles.bar}></div>
-      <a href={full_short} target="_blank">
+      <a href={full_short} target="_blank" className={styles.shortLink}>
         {short}
       </a>
       <button className={btnText === 'Copy' ? styles.copyBtn : `${styles.copyBtn} ${styles.copied}`} onClick={() => copyLink(full_short)}>

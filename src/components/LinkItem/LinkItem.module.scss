@@ -11,10 +11,9 @@
   justify-content: center;
   padding: 10px 0;
 
-  a {
+  a, p {
     text-decoration: none;
-    color: black;
-    padding: 10px 10% 10px 10%;
+    padding: 10px 5%;
     font-size: 18px;
   }
 }
@@ -27,21 +26,26 @@
 }
 
 .originalLink {
+    color: black;
+}
+
+.shortLink {
+  color: $cyan;
 }
 
 .copyBtn {
   font-size: 16px;
   font-weight: 700;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   background-color: $cyan;
   padding: 10px 0;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
 
 .copied {
-    background-color: $dark-violet;
+  background-color: $dark-violet;
 }
