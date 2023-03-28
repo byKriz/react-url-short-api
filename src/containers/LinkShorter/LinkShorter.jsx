@@ -35,9 +35,7 @@ export const LinkShorter = () => {
     }
   };
 
-  const copyLink = (link) => {
-    navigator.clipboard.writeText(link);
-  };
+ 
 
   return (
     <section className={styles.LinkShorter}>
@@ -62,26 +60,13 @@ export const LinkShorter = () => {
       <div className={styles.linksContainer}>
         <ul>
           {urls.map((url, i) => (
-            <li key={i} className={styles.linkItem}>
-              <a
-                href={`https://${url.original}`}
-                target="_blank"
-                className={styles.originalLink}
-              >
-                {url.original}
-              </a>
-              <div className={styles.bar}></div>
-              <a href={url.full_short} target="_blank">
-                {url.short}
-              </a>
-              <button
-                className={styles.copyBtn}
-                id={`copy-btn-item-${i}`}
-                onClick={() => copyLink(url.full_short)}
-              >
-                Copy
-              </button>
-            </li>
+            <LinkItem
+              key={i}
+              full_short={url.full_short}
+              short={url.short}
+              original={url.original}
+              index={i}
+            />
           ))}
         </ul>
       </div>
