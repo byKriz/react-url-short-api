@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./LinkShorter.module.scss";
 import axios from "axios";
+import { LinkItem } from "../../components/LinkItem/LinkItem";
 
 export const LinkShorter = () => {
   const [url, setUrl] = useState("");
@@ -35,8 +36,8 @@ export const LinkShorter = () => {
   };
 
   const copyLink = (link) => {
-    navigator.clipboard.writeText(link)
-  }
+    navigator.clipboard.writeText(link);
+  };
 
   return (
     <section className={styles.LinkShorter}>
@@ -74,7 +75,8 @@ export const LinkShorter = () => {
                 {url.short}
               </a>
               <button
-              className={styles.copyBtn}
+                className={styles.copyBtn}
+                id={`copy-btn-item-${i}`}
                 onClick={() => copyLink(url.full_short)}
               >
                 Copy
