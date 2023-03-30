@@ -1,8 +1,9 @@
 @import "../../sass/variables";
 
 .LinkShorter {
-  padding: 0 20px;
+  padding: $m-padd;
   background-color: $gray;
+  padding-bottom: 100px;
 }
 
 .shorterContainer {
