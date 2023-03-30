@@ -27,3 +27,19 @@
     color: $grayish-violet;
   }
 }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+
+.bar {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: $cyan;
+    top: 0;
+    left: 48.5%;
+}
