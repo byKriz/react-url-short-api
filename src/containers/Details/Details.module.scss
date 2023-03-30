@@ -1,0 +1,29 @@
+@import "../../sass/variables";
+
+.Details {
+  padding: 0 20px;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $very-dark-violet;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: $grayish-violet;
+  }
+}
