@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import ilustration from "../../assets/icons/illustration-working.svg";
+import { GetStartedBtn } from "../../components/GetStartedBtn/GetStartedBtn";
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
           Build your brand's recognition and get detailed insights on how your
           links are performing
         </p>
-        <a href="#">Get Started</a>
+        <GetStartedBtn />
       </div>
     </section>
   );
