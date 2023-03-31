@@ -1,0 +1,13 @@
+@import "../../sass/variables";
+
+.StartLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  background-color: #3a3053;
+  background-image: url("../../assets/icons/bg-boost-desktop.svg");
+  color: white;
+}

@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import { Header } from './components/Header/Header'
-import { Details } from './containers/Details/Details'
-import { Hero } from './containers/Hero/Hero'
-import { LinkShorter } from './containers/LinkShorter/LinkShorter'
+import { useState } from "react";
+import "./App.css";
+import { Header } from "./components/Header/Header";
+import { Details } from "./containers/Details/Details";
+import { Hero } from "./containers/Hero/Hero";
+import { LinkShorter } from "./containers/LinkShorter/LinkShorter";
+import { StartLink } from "./containers/StartLink/StartLink";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,9 +15,9 @@ function App() {
       <Hero />
       <LinkShorter />
       <Details />
-
+      <StartLink />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
