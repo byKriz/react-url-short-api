@@ -10,8 +10,10 @@
   align-items: flex-start;
   justify-content: center;
   padding: 10px 0;
+  max-width: 1440px;
 
-  a, p {
+  a,
+  p {
     text-decoration: none;
     padding: 10px 5%;
     font-size: 18px;
@@ -26,7 +28,7 @@
 }
 
 .originalLink {
-    color: black;
+  color: black;
 }
 
 .shortLink {
