@@ -77,3 +77,35 @@
     gap: 20px;
   }
 }
+
+@media (min-width: $tablet) {
+  .LinkShorter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shorterContainer {
+    padding: 40px 0;
+    width: 100%;
+
+    form {
+      flex-direction: row;
+      justify-content: normal;
+      align-items: center;
+
+      input {
+        width: 50%;
+      }
+
+      button {
+        width: 20%;
+      }
+
+      p {
+        top: 42px;
+      }
+    }
+  }
+}
