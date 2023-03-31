@@ -4,6 +4,7 @@
   padding: $m-padd;
   background-color: $gray;
   padding-bottom: 100px;
+  width: 100%;
 }
 
 .shorterContainer {
@@ -14,7 +15,8 @@
   top: -80px;
   background-image: url("../../assets/icons/bg-boost-desktop.svg");
   background-repeat: no-repeat;
-  
+  max-width: 1440px;
+
   form {
     display: flex;
     flex-direction: column;
