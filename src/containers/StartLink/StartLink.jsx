@@ -7,7 +7,7 @@ export const StartLink = () => {
   return (
     <div className={styles.StartLink}>
       <h3>Boost your links today</h3>
-      <GetStartedBtn />
+      <GetStartedBtn/>
     </div>
   );
 };
