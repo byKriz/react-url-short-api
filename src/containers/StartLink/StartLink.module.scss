@@ -10,9 +10,18 @@
   background-color: #3a3053;
   background-image: url("../../assets/icons/bg-boost-desktop.svg");
   color: white;
+  width: 100%;
 
   h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop) {
+  .StartLink {
+    h3 {
+      font-size: 36px;
+    }
   }
 }
