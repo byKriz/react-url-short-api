@@ -58,28 +58,24 @@
     left: -90px;
   }
 
-  // .FeatureItem {
-  //     flex-direction: row;
-  // }
   .textContainer {
     padding: 0 20px;
 
-    h3, p {
+    h3,
+    p {
       text-align: left;
     }
 
-    // h3 {
-    //     margin-left: -10px;
-    // }
     h3 {
-        width: 100%;
+      width: 100%;
     }
   }
 }
 
 @media (min-width: $desktop) {
-    .FeatureItem {
-        max-width: 550px;
-        max-height: 366px;
-      }
+  .FeatureItem {
+    max-width: 360px;
+    max-height: 240px;
+    // padding-bottom: 10px;
+  }
 }
