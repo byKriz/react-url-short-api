@@ -5,6 +5,7 @@ import { Details } from "./containers/Details/Details";
 import { Hero } from "./containers/Hero/Hero";
 import { LinkShorter } from "./containers/LinkShorter/LinkShorter";
 import { StartLink } from "./containers/StartLink/StartLink";
+import { Footer } from "./containers/Footer/Footer";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <LinkShorter />
       <Details />
       <StartLink />
+      <Footer />
     </div>
   );
 }
