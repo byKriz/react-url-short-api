@@ -8,6 +8,7 @@
   flex-direction: column;
   overflow-x: hidden;
   margin-bottom: 140px;
+  // max-width: 1440px;
 }
 
 .imgContainer {
@@ -46,7 +47,6 @@
 }
 
 @media (min-width: $tablet) {
-
   .Hero {
     flex-direction: row-reverse;
     padding-left: 40px;
@@ -60,9 +60,10 @@
 
   .textContainer {
     align-items: flex-start;
-    padding-left: 0;
+    padding-left: 40px;
 
-    h1, p {
+    h1,
+    p {
       text-align: left;
     }
 
@@ -81,8 +82,15 @@
 }
 
 @media (min-width: $desktop) {
-  .textContainer {
+  // .Hero {
+  //   padding-left: 2%;
+  // }
+  // .Hero {
+  //   overflow-x: initial;
+  // }
 
+  .textContainer {
+    // padding-left: 1%;
 
     h1 {
       font-size: 80px;
