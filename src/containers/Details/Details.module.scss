@@ -64,3 +64,17 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .features {
+    flex-direction: row;
+    max-width: 1440px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 10px;
+    top: 49.5%;
+    left: 0;
+  }
+}
