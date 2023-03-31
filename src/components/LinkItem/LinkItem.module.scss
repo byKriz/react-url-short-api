@@ -49,3 +49,19 @@
 .copied {
   background-color: $dark-violet;
 }
+
+@media (min-width: $tablet) {
+  .linkItem {
+    flex-direction: row;
+    padding: 20px 30px;
+    // width: 100%;
+
+    a {
+      padding-right: 20px;
+    }
+  }
+
+  .bar {
+    opacity: 0;
+  }
+}
