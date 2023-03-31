@@ -12,6 +12,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 40px;
+  width: 100%;
 
   h3 {
     font-size: 30px;
@@ -60,4 +61,49 @@
   svg {
     font-size: 26px;
   }
+}
+
+@media (min-width: $tablet) {
+  .Footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h3,
+    .listContainer {
+      width: 20%;
+      height: 100%;
+      min-height: 120px;
+    }
+  }
+
+  .listContainer {
+    justify-content: flex-start;
+  }
+
+  .iconContainers {
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .Footer {
+    align-items: flex-start;
+    padding: 60px 20px;
+
+    flex-wrap: nowrap;
+
+    h3,
+    .listContainer {
+      width: 20%;
+    }
+  }
+
+  .iconContainers {
+    width: 20%;
+    height: 100%;
+    margin-top: 0 ;
+
+  }
+
 }
