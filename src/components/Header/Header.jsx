@@ -38,9 +38,9 @@ export const Header = () => {
               <li>Pricing</li>
               <li>Resources</li>
             </ul>
-            <div className={styles.desktopLogin}>
+            <div>
               <ul>
-                <li>Login</li>
+                <li className={styles.deskLogin}>Login</li>
                 <li className={styles.deskSignUp}>Sign Up</li>
               </ul>
             </div>
