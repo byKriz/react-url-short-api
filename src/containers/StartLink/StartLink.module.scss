@@ -8,7 +8,9 @@
   gap: 20px;
   padding: 50px 20px;
   background-color: #3a3053;
-  background-image: url("../../assets/icons/bg-boost-desktop.svg");
+  background-image: url("../../assets/icons/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   width: 100%;
 
@@ -20,6 +22,9 @@
 
 @media (min-width: $desktop) {
   .StartLink {
+  background-image: url("../../assets/icons/bg-boost-desktop.svg");
+
+
     h3 {
       font-size: 36px;
     }
