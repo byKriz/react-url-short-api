@@ -32,6 +32,19 @@ export const Header = () => {
             <li>Sign Up</li>
           </ul>
         </div>
+        <div className={styles.desktopContainer}>
+            <ul className={styles.desktopNav}>
+              <li>Feature</li>
+              <li>Pricing</li>
+              <li>Resources</li>
+            </ul>
+            <div className={styles.desktopLogin}>
+              <ul>
+                <li>Login</li>
+                <li className={styles.deskSignUp}>Sign Up</li>
+              </ul>
+            </div>
+        </div>
       </nav>
     </header>
   );

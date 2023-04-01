@@ -85,10 +85,68 @@
   // right: 50%;
 }
 
+.desktopContainer {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .Header {
     padding: 0 40px;
     padding-top: 40px;
     padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hamMenu,
+  .mobileContainer {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 44%;
+    padding: 0;
+  }
+
+  .desktopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .desktopNav {
+    list-style: none;
+    display: flex;
+
+    li {
+      color: $grayish-violet;
+    }
+  }
+
+  .deskSignUp {
+    background-color: $cyan;
+    padding: 10px 12px;
+    color: white;
+    border-radius: 40px;
+
+    li {
+      color: $grayish-violet;
+    }
   }
 }
